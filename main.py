@@ -1,4 +1,3 @@
-# 25 May 2022
 import pandas
 
 student_dict = {
@@ -22,7 +21,7 @@ for (index, row) in student_data_frame.iterrows():
 # Keyword Method with iterrows()
 # {new_key:new_value for (index, row) in df.iterrows()}
 
-# TODO 1. Create a dictionary in this format:
+# Creates a dictionary in this format:
 # {"A": "Alfa", "B": "Bravo"}
 nato_df = pandas.read_csv("nato_phonetic_alphabet.csv")
 for (index, row) in nato_df.iterrows():
@@ -32,7 +31,7 @@ for (index, row) in nato_df.iterrows():
     # print(nato_alphabet_dict)
 
 
-# TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+# Creates a list of the phonetic code words from a word that the user inputs.
 def generate_phonetic():
     change_this = input("Enter a word to be transcribed into the NATO phonetic alphabet: ").upper()
     try:
